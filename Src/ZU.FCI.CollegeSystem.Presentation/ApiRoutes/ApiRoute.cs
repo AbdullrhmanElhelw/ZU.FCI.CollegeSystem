@@ -22,6 +22,7 @@ public static class ApiRoute
         public const string Insert = "";
         public const string Update = "{id:int}";
         public const string Delete = "{id:int}";
+        public const string GetByLevelAndTerm = "get-by-level-term";
     }
 
     public static class Doctors
@@ -46,5 +47,11 @@ public static class ApiRoute
         public const string Delete = "{id:int}";
         public const string UploadFile = "upload-file";
         public const string GetFileInf = "get-file-inf";
+    }
+
+    public static class StudentCourses
+    {
+        public const string Base = "api/student-courses";
+        public const string Register = "register/{courseId:int}";
     }
 }

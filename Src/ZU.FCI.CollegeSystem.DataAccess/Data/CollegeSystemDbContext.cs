@@ -7,6 +7,7 @@ using ZU.FCI.CollegeSystem.DataAccess.Entites.Core;
 using ZU.FCI.CollegeSystem.DataAccess.Entites.Core.Courses;
 using ZU.FCI.CollegeSystem.DataAccess.Entites.Core.Departments;
 using ZU.FCI.CollegeSystem.DataAccess.Entites.Core.Lectures;
+using ZU.FCI.CollegeSystem.DataAccess.Entites.Core.StudentCourses;
 using ZU.FCI.CollegeSystem.DataAccess.Entites.Files;
 using ZU.FCI.CollegeSystem.DataAccess.Entites.Files.LectureFiles;
 using ZU.FCI.CollegeSystem.DataAccess.Entites.Identity.Students;
@@ -30,6 +31,8 @@ public class CollegeSystemDbContext : IdentityDbContext<ApplicationUser, Identit
     public DbSet<CourseImage> CourseImages => Set<CourseImage>();
 
     public DbSet<ProfilePicture> ProfilePictures => Set<ProfilePicture>();
+
+    public DbSet<StudentCourse> StudentCourses => Set<StudentCourse>();
 
     public CollegeSystemDbContext(DbContextOptions<CollegeSystemDbContext> options) : base(options)
     {

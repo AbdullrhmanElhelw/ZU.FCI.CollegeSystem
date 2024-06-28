@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using ZU.FCI.CollegeSystem.BusinessLogic.Courses.Commands.InsertCourse;
+using ZU.FCI.CollegeSystem.BusinessLogic.Courses.Queries.FindCoursesByLevelAndTerm;
 using ZU.FCI.CollegeSystem.BusinessLogic.Courses.Queries.GetAllCourses;
 using ZU.FCI.CollegeSystem.BusinessLogic.Courses.Queries.GetCourse;
 using ZU.FCI.CollegeSystem.Presentation.ApiRoutes;
@@ -29,6 +30,16 @@ public class CourseController : BaseController
     public async Task<IActionResult> GetCourses()
     {
         var result = await _sender.Send(new GetCoursesQuery());
+
+        return result.IsSuccess ?
+            HandleSuccess("Courses Response", result.Value) :
+            HandleFailure(result.ToResult());
+    }
+
+    [HttpGet(ApiRoute.Courses.GetByLevelAndTerm)]
+    public async Task<IActionResult> GetCoursesByLevelAndTerm([FromQuery] FindCoursesByLevelAndTermQuery query)
+    {
+        var result = await _sender.Send(query);
 
         return result.IsSuccess ?
             HandleSuccess("Courses Response", result.Value) :

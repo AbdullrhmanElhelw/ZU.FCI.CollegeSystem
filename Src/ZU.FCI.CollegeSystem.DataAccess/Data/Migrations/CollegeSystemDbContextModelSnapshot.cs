@@ -432,6 +432,24 @@ namespace ZU.FCI.CollegeSystem.DataAccess.Data.Migrations
                     b.ToTable("Sections", (string)null);
                 });
 
+            modelBuilder.Entity("ZU.FCI.CollegeSystem.DataAccess.Entites.Core.StudentCourses.StudentCourse", b =>
+                {
+                    b.Property<int>("StudentId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsVerified")
+                        .HasColumnType("bit");
+
+                    b.HasKey("StudentId", "CourseId");
+
+                    b.HasIndex("CourseId");
+
+                    b.ToTable("StudentCourses", (string)null);
+                });
+
             modelBuilder.Entity("ZU.FCI.CollegeSystem.DataAccess.Entites.Files.BaseFile", b =>
                 {
                     b.Property<int>("Id")
@@ -534,7 +552,7 @@ namespace ZU.FCI.CollegeSystem.DataAccess.Data.Migrations
                     b.ToTable("CourseImages");
                 });
 
-            modelBuilder.Entity("ZU.FCI.CollegeSystem.DataAccess.Entites.Files.LectureFile", b =>
+            modelBuilder.Entity("ZU.FCI.CollegeSystem.DataAccess.Entites.Files.LectureFiles.LectureFile", b =>
                 {
                     b.HasBaseType("ZU.FCI.CollegeSystem.DataAccess.Entites.Files.BaseFile");
 
@@ -696,6 +714,25 @@ namespace ZU.FCI.CollegeSystem.DataAccess.Data.Migrations
                     b.Navigation("Course");
                 });
 
+            modelBuilder.Entity("ZU.FCI.CollegeSystem.DataAccess.Entites.Core.StudentCourses.StudentCourse", b =>
+                {
+                    b.HasOne("ZU.FCI.CollegeSystem.DataAccess.Entites.Core.Courses.Course", "Course")
+                        .WithMany("StudentCourses")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ZU.FCI.CollegeSystem.DataAccess.Entites.Identity.Students.Student", "Student")
+                        .WithMany("StudentCourses")
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+
+                    b.Navigation("Student");
+                });
+
             modelBuilder.Entity("ZU.FCI.CollegeSystem.DataAccess.Entites.Identity.Assistants.Assistant", b =>
                 {
                     b.HasOne("ZU.FCI.CollegeSystem.DataAccess.Entites.Core.Departments.Department", "Department")
@@ -761,7 +798,7 @@ namespace ZU.FCI.CollegeSystem.DataAccess.Data.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("ZU.FCI.CollegeSystem.DataAccess.Entites.Files.LectureFile", b =>
+            modelBuilder.Entity("ZU.FCI.CollegeSystem.DataAccess.Entites.Files.LectureFiles.LectureFile", b =>
                 {
                     b.HasOne("ZU.FCI.CollegeSystem.DataAccess.Entites.Identity.Doctors.Doctor", "Doctor")
                         .WithMany("LectureFiles")
@@ -770,7 +807,7 @@ namespace ZU.FCI.CollegeSystem.DataAccess.Data.Migrations
 
                     b.HasOne("ZU.FCI.CollegeSystem.DataAccess.Entites.Files.BaseFile", null)
                         .WithOne()
-                        .HasForeignKey("ZU.FCI.CollegeSystem.DataAccess.Entites.Files.LectureFile", "Id")
+                        .HasForeignKey("ZU.FCI.CollegeSystem.DataAccess.Entites.Files.LectureFiles.LectureFile", "Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -818,6 +855,8 @@ namespace ZU.FCI.CollegeSystem.DataAccess.Data.Migrations
                     b.Navigation("Lectures");
 
                     b.Navigation("Sections");
+
+                    b.Navigation("StudentCourses");
                 });
 
             modelBuilder.Entity("ZU.FCI.CollegeSystem.DataAccess.Entites.Core.Departments.Department", b =>
@@ -851,6 +890,11 @@ namespace ZU.FCI.CollegeSystem.DataAccess.Data.Migrations
                     b.Navigation("DoctorCourses");
 
                     b.Navigation("LectureFiles");
+                });
+
+            modelBuilder.Entity("ZU.FCI.CollegeSystem.DataAccess.Entites.Identity.Students.Student", b =>
+                {
+                    b.Navigation("StudentCourses");
                 });
 
             modelBuilder.Entity("ZU.FCI.CollegeSystem.DataAccess.Entites.Files.CourseImage", b =>

@@ -20,5 +20,13 @@ internal sealed class StudentConfiguration : IEntityTypeConfiguration<Student>
         builder.HasOne(s => s.ProfilePicture)
             .WithOne(p => p.Student)
             .HasForeignKey<Student>(s => s.ProfilePictureId);
+
+        builder.HasMany(s => s.StudentCourses)
+            .WithOne(sc => sc.Student)
+            .HasForeignKey(sc => sc.StudentId);
+
+        builder.HasMany(s => s.StudentCourses)
+            .WithOne(sc => sc.Student)
+            .HasForeignKey(sc => sc.StudentId);
     }
 }

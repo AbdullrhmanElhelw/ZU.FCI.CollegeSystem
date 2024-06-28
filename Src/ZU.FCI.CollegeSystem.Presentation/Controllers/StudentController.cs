@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using ZU.FCI.CollegeSystem.BusinessLogic.Authentication.Students.Login;
 using ZU.FCI.CollegeSystem.BusinessLogic.Authentication.Students.Register;
 using ZU.FCI.CollegeSystem.BusinessLogic.Students.Queries.GetStudent;
+using ZU.FCI.CollegeSystem.BusinessLogic.Students.Queries.GetStudents;
 using ZU.FCI.CollegeSystem.Presentation.ApiRoutes;
 
 namespace ZU.FCI.CollegeSystem.Presentation.Controllers;
@@ -19,6 +20,16 @@ public class StudentController : BaseController
     public async Task<IActionResult> GetStudent(int id)
     {
         var result = await _sender.Send(new GetStudentQuery(id));
+
+        return result.IsSuccess ?
+            HandleSuccess(result.Value) :
+            HandleFailure(result.ToResult());
+    }
+
+    [HttpGet(ApiRoute.Students.GetAll)]
+    public async Task<IActionResult> GetAllStudents()
+    {
+        var result = await _sender.Send(new GetStudentsQuery());
 
         return result.IsSuccess ?
             HandleSuccess(result.Value) :

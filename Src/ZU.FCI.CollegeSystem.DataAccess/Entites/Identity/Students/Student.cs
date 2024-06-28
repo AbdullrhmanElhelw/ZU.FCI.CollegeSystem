@@ -1,5 +1,6 @@
 ﻿using ZU.FCI.CollegeSystem.DataAccess.Common;
 using ZU.FCI.CollegeSystem.DataAccess.Entites.Core.Departments;
+using ZU.FCI.CollegeSystem.DataAccess.Entites.Core.StudentCourses;
 using ZU.FCI.CollegeSystem.DataAccess.Entites.Files;
 using ZU.FCI.CollegeSystem.DataAccess.Enums;
 
@@ -21,6 +22,8 @@ public class Student : ApplicationUser
 
     public int? ProfilePictureId { get; set; }
     public ProfilePicture? ProfilePicture { get; set; }
+
+    public ICollection<StudentCourse> StudentCourses { get; set; } = [];
 
     #endregion Navigation Properties
 }

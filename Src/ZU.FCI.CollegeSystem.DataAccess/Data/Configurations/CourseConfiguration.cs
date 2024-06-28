@@ -36,5 +36,10 @@ internal sealed class CourseConfiguration : IEntityTypeConfiguration<Course>
             .WithOne(dc => dc.Course)
             .HasForeignKey(dc => dc.CourseId)
             .OnDelete(DeleteBehavior.Cascade);
+
+        builder.HasMany(c => c.StudentCourses)
+            .WithOne(sc => sc.Course)
+            .HasForeignKey(sc => sc.CourseId)
+            .OnDelete(DeleteBehavior.Cascade);
     }
 }

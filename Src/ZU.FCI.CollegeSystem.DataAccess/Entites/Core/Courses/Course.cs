@@ -2,6 +2,7 @@
 using ZU.FCI.CollegeSystem.DataAccess.Entites.Core.Departments;
 using ZU.FCI.CollegeSystem.DataAccess.Entites.Core.DoctorCourses;
 using ZU.FCI.CollegeSystem.DataAccess.Entites.Core.Lectures;
+using ZU.FCI.CollegeSystem.DataAccess.Entites.Core.StudentCourses;
 using ZU.FCI.CollegeSystem.DataAccess.Entites.Files;
 using ZU.FCI.CollegeSystem.DataAccess.Entites.Identity.Assistants;
 using ZU.FCI.CollegeSystem.DataAccess.Enums;
@@ -36,6 +37,8 @@ public sealed class Course : BaseEntity
     public ICollection<Lecture> Lectures { get; set; } = [];
 
     public ICollection<DoctorCourse> DoctorCourses { get; set; } = [];
+
+    public ICollection<StudentCourse> StudentCourses { get; set; } = [];
 
     #endregion Navigation Properties
 }
