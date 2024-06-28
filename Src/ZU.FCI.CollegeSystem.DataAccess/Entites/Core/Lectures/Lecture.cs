@@ -1,6 +1,6 @@
 ﻿using ZU.FCI.CollegeSystem.DataAccess.Common;
 using ZU.FCI.CollegeSystem.DataAccess.Entites.Core.Courses;
-using ZU.FCI.CollegeSystem.DataAccess.Entites.Files;
+using ZU.FCI.CollegeSystem.DataAccess.Entites.Files.LectureFiles;
 
 namespace ZU.FCI.CollegeSystem.DataAccess.Entites.Core.Lectures;
 
@@ -9,6 +9,7 @@ public sealed class Lecture : BaseEntity
     #region Properties
 
     public string Title { get; set; }
+    public string? Description { get; set; }
 
     #endregion Properties
 

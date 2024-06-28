@@ -14,6 +14,9 @@ internal sealed class LectureConfiguration : IEntityTypeConfiguration<Lecture>
             .IsRequired()
             .HasMaxLength(255);
 
+        builder.Property(e => e.Description)
+            .HasMaxLength(500);
+
         builder.HasMany(l => l.LectureFiles)
             .WithOne(lf => lf.Lecture)
             .HasForeignKey(lf => lf.LectureId)

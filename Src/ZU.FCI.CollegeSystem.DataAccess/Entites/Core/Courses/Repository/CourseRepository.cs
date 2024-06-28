@@ -18,6 +18,12 @@ public class CourseRepository : ICourseRepository
         return isExists;
     }
 
+    public async Task<bool> CheckIsExits(int id)
+    {
+        var isExists = await _context.Courses.AnyAsync(x => x.Id == id);
+        return isExists;
+    }
+
     public Task<Course?> GetCourse(int id, CancellationToken cancellationToken = default) =>
     _context.Courses
         .Include(x => x.Department)

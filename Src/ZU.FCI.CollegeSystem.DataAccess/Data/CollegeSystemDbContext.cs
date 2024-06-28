@@ -8,6 +8,7 @@ using ZU.FCI.CollegeSystem.DataAccess.Entites.Core.Courses;
 using ZU.FCI.CollegeSystem.DataAccess.Entites.Core.Departments;
 using ZU.FCI.CollegeSystem.DataAccess.Entites.Core.Lectures;
 using ZU.FCI.CollegeSystem.DataAccess.Entites.Files;
+using ZU.FCI.CollegeSystem.DataAccess.Entites.Files.LectureFiles;
 using ZU.FCI.CollegeSystem.DataAccess.Entites.Identity.Students;
 
 namespace ZU.FCI.CollegeSystem.DataAccess.Data;

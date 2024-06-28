@@ -14,5 +14,10 @@ internal sealed class DoctorConfiguration : IEntityTypeConfiguration<Doctor>
             .WithOne(dc => dc.Doctor)
             .HasForeignKey(dc => dc.DoctorId)
             .OnDelete(DeleteBehavior.Cascade);
+
+        builder.HasMany(d => d.LectureFiles)
+            .WithOne(lf => lf.Doctor)
+            .HasForeignKey(lf => lf.DoctorId)
+            .OnDelete(DeleteBehavior.Restrict);
     }
 }

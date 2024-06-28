@@ -9,6 +9,7 @@ using System.Text;
 using ZU.FCI.CollegeSystem.BusinessLogic.Contracts.Authentication.Jwt;
 using ZU.FCI.CollegeSystem.BusinessLogic.Contracts.Authentication.Settings;
 using ZU.FCI.CollegeSystem.BusinessLogic.Contracts.CQRS.Behaviors;
+using ZU.FCI.CollegeSystem.BusinessLogic.Contracts.Utilities;
 using ZU.FCI.CollegeSystem.DataAccess.Common;
 using ZU.FCI.CollegeSystem.DataAccess.Data;
 using ZU.FCI.CollegeSystem.DataAccess.Entites.Identity.Doctors;
@@ -27,6 +28,8 @@ public static class BusinessLogicDependencies
         services.AddMediatR(c => c.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
         services.AddScoped(typeof(IPipelineBehavior<,>), typeof(ValidationPipelineBehavior<,>));
         services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+
+        services.AddScoped<UserUtility>();
 
         return services;
     }

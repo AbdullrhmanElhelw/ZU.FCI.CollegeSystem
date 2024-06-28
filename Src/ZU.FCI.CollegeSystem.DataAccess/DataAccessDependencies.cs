@@ -6,6 +6,8 @@ using ZU.FCI.CollegeSystem.DataAccess.Data;
 using ZU.FCI.CollegeSystem.DataAccess.Data.Infrastructure;
 using ZU.FCI.CollegeSystem.DataAccess.Entites.Core.Courses.Repository;
 using ZU.FCI.CollegeSystem.DataAccess.Entites.Core.Departments.Repository;
+using ZU.FCI.CollegeSystem.DataAccess.Entites.Core.Lectures.Repository;
+using ZU.FCI.CollegeSystem.DataAccess.Entites.Files.LectureFiles.Repository;
 
 namespace ZU.FCI.CollegeSystem.DataAccess;
 
@@ -36,6 +38,8 @@ public static class DataAccessDependencies
     {
         services.AddScoped<ICourseRepository, CourseRepository>();
         services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+        services.AddScoped<ILectureRepository, LectureRepository>();
+        services.AddScoped<ILectureFileRepository, LectureFileRepository>();
 
         return services;
     }

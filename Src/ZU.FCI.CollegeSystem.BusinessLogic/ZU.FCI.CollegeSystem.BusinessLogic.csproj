@@ -17,8 +17,4 @@
     <ProjectReference Include="..\ZU.FCI.CollegeSystem.DataAccess\ZU.FCI.CollegeSystem.DataAccess.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Lectures\" />
-  </ItemGroup>
-
 </Project>
