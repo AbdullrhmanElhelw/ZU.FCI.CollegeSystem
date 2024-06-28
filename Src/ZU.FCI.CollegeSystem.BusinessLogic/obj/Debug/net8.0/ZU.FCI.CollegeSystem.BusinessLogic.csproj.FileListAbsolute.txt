@@ -1,0 +1,15 @@
+C:\Users\20912020100682\source\repos\ZU.FCI.CollegeSystem\Src\ZU.FCI.CollegeSystem.BusinessLogic\obj\Debug\net8.0\ZU.FCI.CollegeSystem.BusinessLogic.csproj.AssemblyReference.cache
+C:\Users\20912020100682\source\repos\ZU.FCI.CollegeSystem\Src\ZU.FCI.CollegeSystem.BusinessLogic\obj\Debug\net8.0\ZU.FCI.CollegeSystem.BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\20912020100682\source\repos\ZU.FCI.CollegeSystem\Src\ZU.FCI.CollegeSystem.BusinessLogic\obj\Debug\net8.0\ZU.FCI.CollegeSystem.BusinessLogic.AssemblyInfoInputs.cache
+C:\Users\20912020100682\source\repos\ZU.FCI.CollegeSystem\Src\ZU.FCI.CollegeSystem.BusinessLogic\obj\Debug\net8.0\ZU.FCI.CollegeSystem.BusinessLogic.AssemblyInfo.cs
+C:\Users\20912020100682\source\repos\ZU.FCI.CollegeSystem\Src\ZU.FCI.CollegeSystem.BusinessLogic\obj\Debug\net8.0\ZU.FCI.CollegeSystem.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\20912020100682\source\repos\ZU.FCI.CollegeSystem\Src\ZU.FCI.CollegeSystem.BusinessLogic\bin\Debug\net8.0\ZU.FCI.CollegeSystem.BusinessLogic.deps.json
+C:\Users\20912020100682\source\repos\ZU.FCI.CollegeSystem\Src\ZU.FCI.CollegeSystem.BusinessLogic\bin\Debug\net8.0\ZU.FCI.CollegeSystem.BusinessLogic.dll
+C:\Users\20912020100682\source\repos\ZU.FCI.CollegeSystem\Src\ZU.FCI.CollegeSystem.BusinessLogic\bin\Debug\net8.0\ZU.FCI.CollegeSystem.BusinessLogic.pdb
+C:\Users\20912020100682\source\repos\ZU.FCI.CollegeSystem\Src\ZU.FCI.CollegeSystem.BusinessLogic\bin\Debug\net8.0\ZU.FCI.CollegeSystem.DataAccess.dll
+C:\Users\20912020100682\source\repos\ZU.FCI.CollegeSystem\Src\ZU.FCI.CollegeSystem.BusinessLogic\bin\Debug\net8.0\ZU.FCI.CollegeSystem.DataAccess.pdb
+C:\Users\20912020100682\source\repos\ZU.FCI.CollegeSystem\Src\ZU.FCI.CollegeSystem.BusinessLogic\obj\Debug\net8.0\ZU.FCI.C.3DFB40D2.Up2Date
+C:\Users\20912020100682\source\repos\ZU.FCI.CollegeSystem\Src\ZU.FCI.CollegeSystem.BusinessLogic\obj\Debug\net8.0\ZU.FCI.CollegeSystem.BusinessLogic.dll
+C:\Users\20912020100682\source\repos\ZU.FCI.CollegeSystem\Src\ZU.FCI.CollegeSystem.BusinessLogic\obj\Debug\net8.0\refint\ZU.FCI.CollegeSystem.BusinessLogic.dll
+C:\Users\20912020100682\source\repos\ZU.FCI.CollegeSystem\Src\ZU.FCI.CollegeSystem.BusinessLogic\obj\Debug\net8.0\ZU.FCI.CollegeSystem.BusinessLogic.pdb
+C:\Users\20912020100682\source\repos\ZU.FCI.CollegeSystem\Src\ZU.FCI.CollegeSystem.BusinessLogic\obj\Debug\net8.0\ref\ZU.FCI.CollegeSystem.BusinessLogic.dll

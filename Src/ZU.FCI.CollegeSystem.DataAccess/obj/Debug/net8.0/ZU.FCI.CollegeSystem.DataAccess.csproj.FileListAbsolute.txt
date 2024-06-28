@@ -1,0 +1,14 @@
+C:\Users\20912020100682\source\repos\ZU.FCI.CollegeSystem\Src\ZU.FCI.CollegeSystem.DataAccess\bin\Debug\net8.0\ZU.FCI.CollegeSystem.DataAccess.deps.json
+C:\Users\20912020100682\source\repos\ZU.FCI.CollegeSystem\Src\ZU.FCI.CollegeSystem.DataAccess\bin\Debug\net8.0\ZU.FCI.CollegeSystem.DataAccess.dll
+C:\Users\20912020100682\source\repos\ZU.FCI.CollegeSystem\Src\ZU.FCI.CollegeSystem.DataAccess\bin\Debug\net8.0\ZU.FCI.CollegeSystem.DataAccess.pdb
+C:\Users\20912020100682\source\repos\ZU.FCI.CollegeSystem\Src\ZU.FCI.CollegeSystem.DataAccess\obj\Debug\net8.0\ZU.FCI.CollegeSystem.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\20912020100682\source\repos\ZU.FCI.CollegeSystem\Src\ZU.FCI.CollegeSystem.DataAccess\obj\Debug\net8.0\ZU.FCI.CollegeSystem.DataAccess.AssemblyInfoInputs.cache
+C:\Users\20912020100682\source\repos\ZU.FCI.CollegeSystem\Src\ZU.FCI.CollegeSystem.DataAccess\obj\Debug\net8.0\ZU.FCI.CollegeSystem.DataAccess.AssemblyInfo.cs
+C:\Users\20912020100682\source\repos\ZU.FCI.CollegeSystem\Src\ZU.FCI.CollegeSystem.DataAccess\obj\Debug\net8.0\ZU.FCI.CollegeSystem.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\20912020100682\source\repos\ZU.FCI.CollegeSystem\Src\ZU.FCI.CollegeSystem.DataAccess\obj\Debug\net8.0\ZU.FCI.CollegeSystem.DataAccess.dll
+C:\Users\20912020100682\source\repos\ZU.FCI.CollegeSystem\Src\ZU.FCI.CollegeSystem.DataAccess\obj\Debug\net8.0\refint\ZU.FCI.CollegeSystem.DataAccess.dll
+C:\Users\20912020100682\source\repos\ZU.FCI.CollegeSystem\Src\ZU.FCI.CollegeSystem.DataAccess\obj\Debug\net8.0\ZU.FCI.CollegeSystem.DataAccess.pdb
+C:\Users\20912020100682\source\repos\ZU.FCI.CollegeSystem\Src\ZU.FCI.CollegeSystem.DataAccess\obj\Debug\net8.0\ref\ZU.FCI.CollegeSystem.DataAccess.dll
+C:\Users\20912020100682\source\repos\ZU.FCI.CollegeSystem\Src\ZU.FCI.CollegeSystem.DataAccess\bin\Debug\net8.0\ZU.FCI.CollegeSystem.DataAccess.runtimeconfig.json
+C:\Users\20912020100682\source\repos\ZU.FCI.CollegeSystem\Src\ZU.FCI.CollegeSystem.DataAccess\obj\Debug\net8.0\ZU.FCI.CollegeSystem.DataAccess.csproj.AssemblyReference.cache
+C:\Users\20912020100682\source\repos\ZU.FCI.CollegeSystem\Src\ZU.FCI.CollegeSystem.DataAccess\obj\Debug\net8.0\ZU.FCI.CollegeSystem.DataAccess.genruntimeconfig.cache

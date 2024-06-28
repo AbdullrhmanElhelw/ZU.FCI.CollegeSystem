@@ -1,0 +1,6 @@
+@ZU.FCI.CollegeSystem.Presentation_HostAddress = http://localhost:5296
+
+GET {{ZU.FCI.CollegeSystem.Presentation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

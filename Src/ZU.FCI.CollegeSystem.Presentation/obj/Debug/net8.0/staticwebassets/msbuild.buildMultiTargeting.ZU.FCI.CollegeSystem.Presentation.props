@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ZU.FCI.CollegeSystem.Presentation.props" />
+</Project>
