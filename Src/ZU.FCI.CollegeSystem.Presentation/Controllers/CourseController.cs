@@ -3,10 +3,11 @@ using Microsoft.AspNetCore.Mvc;
 using ZU.FCI.CollegeSystem.BusinessLogic.Courses.Commands.InsertCourse;
 using ZU.FCI.CollegeSystem.BusinessLogic.Courses.Queries.GetAllCourses;
 using ZU.FCI.CollegeSystem.BusinessLogic.Courses.Queries.GetCourse;
+using ZU.FCI.CollegeSystem.Presentation.ApiRoutes;
 
 namespace ZU.FCI.CollegeSystem.Presentation.Controllers;
 
-[Route("api/[controller]")]
+[Route(ApiRoute.Courses.Base)]
 [ApiController]
 public class CourseController : BaseController
 {
@@ -14,7 +15,7 @@ public class CourseController : BaseController
     {
     }
 
-    [HttpGet("{id:int}")]
+    [HttpGet(ApiRoute.Courses.Get)]
     public async Task<IActionResult> GetCourse(int id)
     {
         var result = await _sender.Send(new GetCourseQuery(id));
@@ -24,7 +25,7 @@ public class CourseController : BaseController
             HandleFailure(result.ToResult());
     }
 
-    [HttpGet]
+    [HttpGet(ApiRoute.Courses.GetAll)]
     public async Task<IActionResult> GetCourses()
     {
         var result = await _sender.Send(new GetCoursesQuery());
@@ -34,7 +35,7 @@ public class CourseController : BaseController
             HandleFailure(result.ToResult());
     }
 
-    [HttpPost("insert")]
+    [HttpPost(ApiRoute.Courses.Insert)]
     public async Task<IActionResult> InsertCourse([FromBody] InsertCourseCommand command)
     {
         var result = await _sender.Send(command);

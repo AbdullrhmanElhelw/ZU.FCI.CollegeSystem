@@ -4589,11 +4589,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\20912020100682\\source\\repos\\ZU.FCI.CollegeSystem\\Src\\ZU.FCI.CollegeSystem.Presentation\\ZU.FCI.CollegeSystem.Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\20912020100682\\source\\ZU.FCI.CollegeSystem\\Src\\ZU.FCI.CollegeSystem.Presentation\\ZU.FCI.CollegeSystem.Presentation.csproj",
       "projectName": "ZU.FCI.CollegeSystem.Presentation",
-      "projectPath": "C:\\Users\\20912020100682\\source\\repos\\ZU.FCI.CollegeSystem\\Src\\ZU.FCI.CollegeSystem.Presentation\\ZU.FCI.CollegeSystem.Presentation.csproj",
+      "projectPath": "C:\\Users\\20912020100682\\source\\ZU.FCI.CollegeSystem\\Src\\ZU.FCI.CollegeSystem.Presentation\\ZU.FCI.CollegeSystem.Presentation.csproj",
       "packagesPath": "C:\\Users\\20912020100682\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\20912020100682\\source\\repos\\ZU.FCI.CollegeSystem\\Src\\ZU.FCI.CollegeSystem.Presentation\\obj\\",
+      "outputPath": "C:\\Users\\20912020100682\\source\\ZU.FCI.CollegeSystem\\Src\\ZU.FCI.CollegeSystem.Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\20912020100682\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4611,8 +4611,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\20912020100682\\source\\repos\\ZU.FCI.CollegeSystem\\Src\\ZU.FCI.CollegeSystem.BusinessLogic\\ZU.FCI.CollegeSystem.BusinessLogic.csproj": {
-              "projectPath": "C:\\Users\\20912020100682\\source\\repos\\ZU.FCI.CollegeSystem\\Src\\ZU.FCI.CollegeSystem.BusinessLogic\\ZU.FCI.CollegeSystem.BusinessLogic.csproj"
+            "C:\\Users\\20912020100682\\source\\ZU.FCI.CollegeSystem\\Src\\ZU.FCI.CollegeSystem.BusinessLogic\\ZU.FCI.CollegeSystem.BusinessLogic.csproj": {
+              "projectPath": "C:\\Users\\20912020100682\\source\\ZU.FCI.CollegeSystem\\Src\\ZU.FCI.CollegeSystem.BusinessLogic\\ZU.FCI.CollegeSystem.BusinessLogic.csproj"
             }
           }
         }

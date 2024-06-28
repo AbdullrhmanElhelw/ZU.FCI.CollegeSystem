@@ -3,10 +3,11 @@ using Microsoft.AspNetCore.Mvc;
 using ZU.FCI.CollegeSystem.BusinessLogic.Authentication.Students.Login;
 using ZU.FCI.CollegeSystem.BusinessLogic.Authentication.Students.Register;
 using ZU.FCI.CollegeSystem.BusinessLogic.Students.Queries.GetStudent;
+using ZU.FCI.CollegeSystem.Presentation.ApiRoutes;
 
 namespace ZU.FCI.CollegeSystem.Presentation.Controllers;
 
-[Route("api/[controller]")]
+[Route(ApiRoute.Students.Base)]
 [ApiController]
 public class StudentController : BaseController
 {
@@ -14,7 +15,7 @@ public class StudentController : BaseController
     {
     }
 
-    [HttpGet("{id:int}")]
+    [HttpGet(ApiRoute.Students.Get)]
     public async Task<IActionResult> GetStudent(int id)
     {
         var result = await _sender.Send(new GetStudentQuery(id));
@@ -24,7 +25,7 @@ public class StudentController : BaseController
             HandleFailure(result.ToResult());
     }
 
-    [HttpPost("register")]
+    [HttpPost(ApiRoute.Students.Register)]
     public async Task<IActionResult> Register([FromBody] StudentRegisterCommand command)
     {
         var result = await _sender.Send(command);
@@ -34,7 +35,7 @@ public class StudentController : BaseController
             HandleFailure(result);
     }
 
-    [HttpPost("login")]
+    [HttpPost(ApiRoute.Students.Login)]
     public async Task<IActionResult> Login([FromBody] StudentLoginCommand command)
     {
         var result = await _sender.Send(command);

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z3KTEjRzQ2I=",
+  "dgSpecHash": "wjrUQM940fk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\20912020100682\\source\\repos\\ZU.FCI.CollegeSystem\\Src\\ZU.FCI.CollegeSystem.Presentation\\ZU.FCI.CollegeSystem.Presentation.csproj",
+  "projectFilePath": "C:\\Users\\20912020100682\\source\\ZU.FCI.CollegeSystem\\Src\\ZU.FCI.CollegeSystem.Presentation\\ZU.FCI.CollegeSystem.Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\20912020100682\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\20912020100682\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

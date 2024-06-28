@@ -2835,11 +2835,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\20912020100682\\source\\repos\\ZU.FCI.CollegeSystem\\Src\\ZU.FCI.CollegeSystem.BusinessLogic\\ZU.FCI.CollegeSystem.BusinessLogic.csproj",
+      "projectUniqueName": "C:\\Users\\20912020100682\\source\\ZU.FCI.CollegeSystem\\Src\\ZU.FCI.CollegeSystem.BusinessLogic\\ZU.FCI.CollegeSystem.BusinessLogic.csproj",
       "projectName": "ZU.FCI.CollegeSystem.BusinessLogic",
-      "projectPath": "C:\\Users\\20912020100682\\source\\repos\\ZU.FCI.CollegeSystem\\Src\\ZU.FCI.CollegeSystem.BusinessLogic\\ZU.FCI.CollegeSystem.BusinessLogic.csproj",
+      "projectPath": "C:\\Users\\20912020100682\\source\\ZU.FCI.CollegeSystem\\Src\\ZU.FCI.CollegeSystem.BusinessLogic\\ZU.FCI.CollegeSystem.BusinessLogic.csproj",
       "packagesPath": "C:\\Users\\20912020100682\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\20912020100682\\source\\repos\\ZU.FCI.CollegeSystem\\Src\\ZU.FCI.CollegeSystem.BusinessLogic\\obj\\",
+      "outputPath": "C:\\Users\\20912020100682\\source\\ZU.FCI.CollegeSystem\\Src\\ZU.FCI.CollegeSystem.BusinessLogic\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\20912020100682\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2857,8 +2857,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\20912020100682\\source\\repos\\ZU.FCI.CollegeSystem\\Src\\ZU.FCI.CollegeSystem.DataAccess\\ZU.FCI.CollegeSystem.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\20912020100682\\source\\repos\\ZU.FCI.CollegeSystem\\Src\\ZU.FCI.CollegeSystem.DataAccess\\ZU.FCI.CollegeSystem.DataAccess.csproj"
+            "C:\\Users\\20912020100682\\source\\ZU.FCI.CollegeSystem\\Src\\ZU.FCI.CollegeSystem.DataAccess\\ZU.FCI.CollegeSystem.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\20912020100682\\source\\ZU.FCI.CollegeSystem\\Src\\ZU.FCI.CollegeSystem.DataAccess\\ZU.FCI.CollegeSystem.DataAccess.csproj"
             }
           }
         }

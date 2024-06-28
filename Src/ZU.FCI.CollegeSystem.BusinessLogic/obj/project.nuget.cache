@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pv4kCw+0Bl0=",
+  "dgSpecHash": "nWG/6oP/oE0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\20912020100682\\source\\repos\\ZU.FCI.CollegeSystem\\Src\\ZU.FCI.CollegeSystem.BusinessLogic\\ZU.FCI.CollegeSystem.BusinessLogic.csproj",
+  "projectFilePath": "C:\\Users\\20912020100682\\source\\ZU.FCI.CollegeSystem\\Src\\ZU.FCI.CollegeSystem.BusinessLogic\\ZU.FCI.CollegeSystem.BusinessLogic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\20912020100682\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\20912020100682\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

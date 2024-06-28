@@ -2,10 +2,11 @@
 using Microsoft.AspNetCore.Mvc;
 using ZU.FCI.CollegeSystem.BusinessLogic.Authentication.Doctors.Login;
 using ZU.FCI.CollegeSystem.BusinessLogic.Authentication.Doctors.Register;
+using ZU.FCI.CollegeSystem.Presentation.ApiRoutes;
 
 namespace ZU.FCI.CollegeSystem.Presentation.Controllers;
 
-[Route("api/[controller]")]
+[Route(ApiRoute.Doctors.Base)]
 [ApiController]
 public class DoctorController : BaseController
 {
@@ -13,7 +14,7 @@ public class DoctorController : BaseController
     {
     }
 
-    [HttpPost("login")]
+    [HttpPost(ApiRoute.Doctors.Login)]
     public async Task<IActionResult> LoginDoctor(DoctorLoginCommand command)
     {
         var result = await _sender.Send(command);
@@ -22,7 +23,7 @@ public class DoctorController : BaseController
             HandleFailure(result.ToResult());
     }
 
-    [HttpPost("register")]
+    [HttpPost(ApiRoute.Doctors.Register)]
     public async Task<IActionResult> RegisterDoctor(DoctorRegisterCommand command)
     {
         var result = await _sender.Send(command);
